@@ -1,2 +1,2 @@
 # Pseudocodigo
-Algoritmos realizados em **Portugol** através do *Visuaalg*  
+Algoritmos realizados em **Portugol** através do *Visualg*  
