@@ -1,29 +1,29 @@
 Algoritmo "experiencias"
-//Maria acabou de iniciar seu curso de graduação na faculdade de medicina e
-//precisa de sua ajuda para organizar os experimentos de um laboratório o qual
-//ela é responsável. Ela quer saber no final do ano, quantas cobaias foram
-//utilizadas no laboratório e o percentual de cada tipo de cobaia utilizada.
-//Este laboratório em especial utiliza três tipos de cobaias: sapos, ratos e
-//coelhos. Para obter estas informações, ela sabe exatamente o número de
+//Maria acabou de iniciar seu curso de graduaÃ§Ã£o na faculdade de medicina e
+//precisa de sua ajuda para organizar os experimentos de um laboratÃ³rio o qual
+//ela Ã© responsÃ¡vel. Ela quer saber no final do ano, quantas cobaias foram
+//utilizadas no laboratÃ³rio e o percentual de cada tipo de cobaia utilizada.
+//Este laboratÃ³rio em especial utiliza trÃªs tipos de cobaias: sapos, ratos e
+//coelhos. Para obter estas informaÃ§Ãµes, ela sabe exatamente o nÃºmero de
 //experimentos que foram realizados, o tipo de cobaia utilizada e a quantidade
-//de cobaias utilizadas em cada experimento. Faça um programa que leia um
-//valor inteiro N que indica os vários casos de teste que vem a seguir. Cada
-//caso de teste contém um inteiro que representa a quantidade de cobaias
+//de cobaias utilizadas em cada experimento. FaÃ§a um programa que leia um
+//valor inteiro N que indica os vÃ¡rios casos de teste que vem a seguir. Cada
+//caso de teste contÃ©m um inteiro que representa a quantidade de cobaias
 //utilizadas e uma letra ('C', 'R' ou 'S'), indicando o tipo de cobaia
 //(R:Rato S:Sapo C:Coelho). Apresente o total de cobaias utilizadas, o total
-//de cada tipo de cobaia utilizada e o percentual de cada uma em relação ao
+//de cada tipo de cobaia utilizada e o percentual de cada uma em relaÃ§Ã£o ao
 //total de cobaias utilizadas, sendo que o percentual deve ser apresentado
-//com dois dígitos após o ponto.
+//com dois dÃ­gitos apÃ³s o ponto.
 
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 
     i, x, qtdCobaia, totalCobaia, coelho, ratos, sapo: inteiro
     porcenSapo, porcenRato, porcenCoelho: real
     tipoCobaia: caractere
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 
     totalCobaia <- 0
     coelho      <- 0
@@ -54,7 +54,7 @@ Inicio
     porcenRato   <- (100*ratos)/totalCobaia
     porcenCoelho <- (100*coelho)/totalCobaia
     
-    escreval  ("RELATÓRIO FINAL: ")
+    escreval  ("RELATÃ“RIO FINAL: ")
     escreval  ("TOTAL DE COBAIAS = ", totalCobaia)
     escreval  ("TOTAL DE COELHOS = ", coelho)
     escreval  ("TOTAL DE RATOS = ", ratos)
@@ -62,7 +62,5 @@ Inicio
     escreval  ()
     escreval  ("COELHOS (%): ", porcenCoelho:5:2)
     escreval  ("RATOS (%): ", porcenRato:5:2)
-    escreva   ("SAPOS (%): ", porcenSapo:5:2)
-    
-
+    escreva   ("SAPOS (%): ", porcenSapo:5:2) 
 Fimalgoritmo
