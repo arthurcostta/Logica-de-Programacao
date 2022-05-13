@@ -1,16 +1,16 @@
 Algoritmo "negativos"
-// Faça um programa que leia um número inteiro positivo N (máximo = 10) e
-//depois N números inteiros e armazene-os em um vetor. Em seguida, mostrar
-//na tela todos os números negativos lidos.
+// FaÃ§a um programa que leia um nÃºmero inteiro positivo N (mÃ¡ximo = 10) e
+//depois N nÃºmeros inteiros e armazene-os em um vetor. Em seguida, mostrar
+//na tela todos os nÃºmeros negativos lidos.
 
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 
     V: vetor [0..9] de real
     i, N: inteiro
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 
     escreva ("Quantos numeros voce vai digitar: ")
     leia    (N)
@@ -24,7 +24,7 @@ Inicio
     
     escreval  ("NUMEROS NEGATIVOS: ")
     
-    para i de 0 ate N faca
+    para i de 0 ate N-1 faca
         se V[i] < 0 entao
             escreval (V[i])
         fimse
