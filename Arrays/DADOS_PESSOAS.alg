@@ -25,14 +25,12 @@ Inicio
     fimpara
     
     maiorAltura <- altura[0]
+    menorAltura <- altura[0]
     para i de 1 ate n-1 faca
         se altura[i] > maiorAltura entao
             maiorAltura <- altura[i]
         fimse
-    fimpara
-    
-    menorAltura <- altura[0]
-    para i de 1 ate n-1 faca
+        
         se altura[i] < menorAltura entao
             menorAltura <- altura[i]
         fimse
@@ -53,8 +51,8 @@ Inicio
     
     mediaMulheres <- alturaMulheres/numeroMulheres
     
-    escreval  ("Menor altura = ", menorAltura)
-    escreval  ("Maior altura = ", maiorAltura)
+    escreval  ("Menor altura = ", menorAltura:3:2)
+    escreval  ("Maior altura = ", maiorAltura:3:2)
     escreval  ("Media das alturas das mulheres = ", mediaMulheres:3:2)
     escreva   ("Numero de homens = ", numeroHomens)
 
