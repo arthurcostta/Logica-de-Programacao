@@ -14,7 +14,7 @@ Var
 // Seção de Declarações das variáveis 
 
     soma: real
-    N, i,j: inteiro
+    N, i,j, linha, coluna: inteiro
     mat: vetor [0..9, 0..9] de real
 
 Inicio
@@ -36,7 +36,7 @@ Inicio
     para i de 0 ate N-1 faca
         para j de 0 ate N-1 faca
             se mat[i,j] > 0 entao
-                soma <- soma + m[i,j]
+                soma <- soma + mat[i,j]
             fimse
         fimpara
     fimpara
@@ -45,8 +45,52 @@ Inicio
     escreval  ()
     
     escreva   ("Escolha uma linha: ")
-    leia      (i)
+    leia      (linha)
     
+    para i de 0 ate 0 faca
+        para j de 0 ate N-1 faca
+            escreva   (mat[linha,j]:3:1, " | ")
+        fimpara
+        escreval
+    fimpara
+    
+    escreval ()
+    
+    escreva   ("Escolha uma coluna: ")
+    leia      (coluna)
 
+    para i de 0 ate N-1 faca
+        para j de 0 ate 0 faca
+            escreva   (mat[i,coluna]:3:1, " | ")
+        fimpara
+    fimpara
+    
+    escreval ()
+    escreval ()
+    
+    escreva  ("DIAGONAL PRINCIPAL = ")
+    para i de 0 ate N-1 faca
+        para j de 0 ate N-1 faca
+            se i = j entao
+                escreva (mat[i,j]:3:1, " | ")
+            fimse
+        fimpara
+    fimpara
+    
+    escreval ()
+    escreval ()
+    
+    escreval  ("MATRIZ ALTERADA:")
+    
+    para i de 0 ate N-1 faca
+        para j de 0 ate N-1 faca
+            se mat[i,j] < 0 entao
+                escreva (Exp(mat[i,j],2):3:1, " ")
+            senao
+                escreva (mat[i,j]:3:1, " ")
+            fimse
+        fimpara
+        escreval ()
+    fimpara
 
 Fimalgoritmo
