@@ -40,19 +40,17 @@ Inicio
             fimse
         fimpara
     fimpara
-    escreval  ("SOMA DOS POSITIVOS = ",soma)
+    escreval  ("SOMA DOS POSITIVOS = ",soma:3:1)
     
     escreval  ()
     
     escreva   ("Escolha uma linha: ")
     leia      (linha)
     
-    para i de 0 ate 0 faca
-        para j de 0 ate N-1 faca
-            escreva   (mat[linha,j]:3:1, " | ")
-        fimpara
-        escreval
+    para j de 0 ate N-1 faca
+        escreva   (mat[linha,j]:3:1, " | ")
     fimpara
+    escreval
     
     escreval ()
     
@@ -60,9 +58,7 @@ Inicio
     leia      (coluna)
 
     para i de 0 ate N-1 faca
-        para j de 0 ate 0 faca
-            escreva   (mat[i,coluna]:3:1, " | ")
-        fimpara
+        escreva   (mat[i,coluna]:3:1, " | ")
     fimpara
     
     escreval ()
