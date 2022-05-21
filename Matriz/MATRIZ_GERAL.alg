@@ -47,6 +47,7 @@ Inicio
     escreva   ("Escolha uma linha: ")
     leia      (linha)
     
+     escreva   ("LINHA ESCOLHIDA = ")
     para j de 0 ate N-1 faca
         escreva   (mat[linha,j]:3:1, " | ")
     fimpara
@@ -57,6 +58,7 @@ Inicio
     escreva   ("Escolha uma coluna: ")
     leia      (coluna)
 
+    escreva   ("COLUNA ESCOLHIDA = ")
     para i de 0 ate N-1 faca
         escreva   (mat[i,coluna]:3:1, " | ")
     fimpara
@@ -66,11 +68,7 @@ Inicio
     
     escreva  ("DIAGONAL PRINCIPAL = ")
     para i de 0 ate N-1 faca
-        para j de 0 ate N-1 faca
-            se i = j entao
-                escreva (mat[i,j]:3:1, " | ")
-            fimse
-        fimpara
+        escreva (mat[i,i]:3:1, " | ")
     fimpara
     
     escreval ()
