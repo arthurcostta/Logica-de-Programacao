@@ -31,9 +31,8 @@ Inicio
     para i de 0 ate M-1 faca
         para j de 0 ate N-1 faca
             se mat[i,j] < 0 entao
-                escreva (mat[i,j])
+                escreval (mat[i,j])
             fimse
-            escreval ()
         fimpara
     fimpara
     
